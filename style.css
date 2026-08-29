@@ -20,6 +20,8 @@ body {
     position: relative;
     z-index: 2;
     margin: 0;
+    max-width: 400px;
+    width: 100%;
 }
 
 .intro-section {
@@ -35,62 +37,173 @@ body {
 .social-login-buttons button {
     display: block;
     text-align: center;
-    padding: 12px 20px;
+    padding: 10px 20px;
     cursor: pointer;
     border-radius: 15px;
-    margin: 5px 0;
+    margin: 5px;
+    border: none;
+    width: 100%;
+    font-weight: bold;
+    font-family: 'Segoe UI';
 }
 
 .google-login {
     background-color: #ffffff;
     color: #000000;
-    border: none;
 }
 
 .facebook-login {
     background-color: #3b5998;
     color: #ffffff;
-    border: none;
 }
 
 .microsoft-login {
     background-color: #0078d4;
     color: #ffffff;
-    border: none;
 }
 
 .apple-login {
     background-color: #000000;
     color: #ffffff;
-    border: none;
+}
+
+.telegram-login {
+    background-color: #ffffff;
 }
 
 .icon-login button {
     background-color: rgba(255, 255, 255, 0.2);
     color: #ffffff;
-    padding: 10px 15px;
-    font-size: 12px;
+    padding: 10px 12px;
     border: none;
     cursor: pointer;
     border-radius: 12px;
-    margin: 2px;
+    margin: 3px;
+    font-size: medium;
+    font-weight: bold;
+    width: 22%;
+    font-family: 'Franklin Gothic Medium';
 }
 
 p {
     color: #ffffff;
 }
 
-.get-super-link {
+.turbo-link {
     background-color: #220452ef;
-    border: none;
-    padding: 5px;
-    border-radius: 8px;
-    color: #ffffff;
+    color: #0078d4;
 }
 
 .login-with-password {
-    padding: 5px;
-    border-radius: 8px;
-    border: none;
     background-color: #174683;
+    color: #000000;
+}
+
+.google-login:hover {
+    filter: brightness(90%);
+}
+
+.facebook-login:hover {
+    filter: brightness(90%);
+}
+
+.microsoft-login:hover {
+    filter: brightness(90%);
+}
+
+.apple-login:hover {
+    filter: brightness(90%);
+    background-color: #182644;
+}
+
+.telegram-login:hover {
+    filter: brightness(90%);
+}
+
+.icon-login button:hover {
+    filter: brightness(90%);
+}
+
+#email {
+    padding: 12px 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: silver;
+    color: #000000;
+    width: 80%;
+}
+
+#email:focus {
+    filter: brightness(80%);
+    background-color: silver;
+    outline: none;
+    border: 2px solid lightblue;
+}
+
+.email-login {
+    background-color: transparent;
+    padding: 8px;
+    border: none;
+    font-family: 'Segoe UI';
+
+}
+
+.other-login-actions button:hover {
+    filter: brightness(90%);
+}
+
+.divider-line {
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    margin: 5px;
+    border: none;
+}
+
+.divider-line::before {
+    flex: 1;
+    content: "";
+    height: 3px;
+    background-color: #040b14;
+}
+
+.divider-line::after {
+    flex: 1;
+    content: "";
+    height: 3px;
+    background-color: #040c18;
+}
+
+.other-login-actions button {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: small;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    padding: 12px 20px;
+    border-radius: 15px;
+    border: none;
+    margin: 5px;
+}
+
+.telegram-login i {
+    color: #24A1DE;
+}
+
+.x-icon-login i {
+    color: #000000;
+}
+
+.steam-icon-login i {
+    color: #040c18;
+}
+
+.twitch-icon-login i {
+    color: #160235;
+}
+
+.discord-icon-login i {
+    color: #5865F2;
 }
