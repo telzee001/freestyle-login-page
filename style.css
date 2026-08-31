@@ -2,7 +2,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 500px) {
+    .login-box {
+        margin: 0 16px;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 body {
@@ -15,13 +31,13 @@ body {
 
 .login-box {
     background-color: #7f8cad;
-    padding: 40px;
-    border-radius: 12px;
+    padding: 22px 18px;
+    border-radius: 25px;
     position: relative;
     z-index: 2;
-    margin: 0;
     max-width: 400px;
     width: 100%;
+    margin-left: 50%;
 }
 
 .intro-section {
@@ -32,6 +48,18 @@ body {
     height: 100%;
     z-index: -1;
     color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px;
+    max-width: 600px;
+    padding-left: 18px;
+}
+
+.social-login h2 {
+    font-size: 30px;
+    font-family: "Helvetica";
+    margin: 3px 3px;
 }
 
 .social-login-buttons button {
@@ -68,33 +96,55 @@ body {
 }
 
 .telegram-login {
-    background-color: #ffffff;
+    background-color: #61548a;
 }
 
-.icon-login button {
-    background-color: rgba(255, 255, 255, 0.2);
-    color: #ffffff;
-    padding: 10px 12px;
-    border: none;
+.icon-login {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3px 3px;
+    border: 2px solid;
+    color: blueviolet;
     cursor: pointer;
-    border-radius: 12px;
-    margin: 3px;
+    border-radius: 15px;
+    margin: 10px 5px;
     font-size: medium;
     font-weight: bold;
-    width: 22%;
+    width: 100%;
     font-family: 'Franklin Gothic Medium';
 }
 
-p {
+.icon-login button {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    padding: 10px 10px;
+    width: 100%;
+    font-size: 24px;
+}
+
+.icon-login button:hover {
+    filter: brightness(300%);
+}
+
+.social-login p {
+    color: #ffffff;
+    font-family:'Verdana';
+    font-size: 16px;
+    margin:5px;
+}
+
+.social-login p a {
+    color: #036320;
+    text-decoration: none;
+}
+
+.login-with-email {
+    background-color: #5609d3ef;
     color: #ffffff;
 }
 
-.turbo-link {
-    background-color: #220452ef;
-    color: #0078d4;
-}
-
-.login-with-password {
+.get-referral-link {
     background-color: #174683;
     color: #000000;
 }
@@ -120,28 +170,27 @@ p {
     filter: brightness(90%);
 }
 
-.icon-login button:hover {
-    filter: brightness(90%);
-}
-
 #email {
-    padding: 12px 10px;
-    border: none;
-    border-radius: 8px;
-    background-color: silver;
-    color: #000000;
-    width: 80%;
+    padding: 12px 14px;
+    border: 2px solid;
+    color: #3d1d7a;
+    border-radius: 10px;
+    background-color: transparent;
+    width: 100%;
+    margin: 5px;
+    font-weight: bold;
 }
 
 #email:focus {
-    filter: brightness(80%);
+    filter: brightness(90%);
     background-color: silver;
     outline: none;
-    border: 2px solid lightblue;
+    border: 2px solid;
+    color: #000000;
 }
 
 .email-login {
-    background-color: transparent;
+    color: #000000;
     padding: 8px;
     border: none;
     font-family: 'Segoe UI';
@@ -163,15 +212,15 @@ p {
 .divider-line::before {
     flex: 1;
     content: "";
-    height: 3px;
-    background-color: #040b14;
+    height: 2px;
+    background-color: #000000;
 }
 
 .divider-line::after {
     flex: 1;
     content: "";
-    height: 3px;
-    background-color: #040c18;
+    height: 2px;
+    background-color: #000000;
 }
 
 .other-login-actions button {
@@ -189,21 +238,46 @@ p {
 }
 
 .telegram-login i {
-    color: #24A1DE;
-}
-
-.x-icon-login i {
     color: #000000;
 }
 
+.x-icon-login i {
+    color: #19087a;
+}
+
 .steam-icon-login i {
-    color: #040c18;
+    color: #0d0555;
 }
 
 .twitch-icon-login i {
-    color: #160235;
+    color: #0a0444;
 }
 
 .discord-icon-login i {
-    color: #5865F2;
+    color: #04053f;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: none;
+    white-space: nowrap;
+}
+
+.intro-section h1 {
+    animation: fadeIn 2s ease-in;
+    font-size: 65px;
+    font-family:'Franklin Gothic Medium';
+    margin: 5px;
+}
+
+.intro-section p {
+    animation: fadeIn 3s ease-in-out;
+    font-size: 25px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
