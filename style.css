@@ -279,22 +279,22 @@ body {
 
 .intro-section h1 {
     font-size: 70px;
-    font-family: 'Franklin Gothic Medium';
+    font-family:'Segoe UI';
     margin: 0;
     color: #1298fe;
 }
 
 .intro-section p {
-    font-size: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    font-family:'Trebuchet MS', sans-serif;
     color: #ffffff;
     margin: 5px 0;
 }
 
 .intro-section h2 {
     font-size: 50px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #1298fe;
+    font-family: 'Franklin Gothic Medium';
+    color: #f48f1b;
 }
 
 .letter {
@@ -328,7 +328,7 @@ body {
 
 .intro-section h1 i {
     font-size: 50px;
-    color: #1298fe;
+    color: #def607;
 }
 
 .intro-divider {
@@ -338,7 +338,15 @@ body {
     font-size: 40px;
     font-family: 'Franklin Gothic Medium';
     font-style: italic;
-    color: #1298fe;
+    color: #12bbfe;
     margin: 0;
     gap: 10px;
+}
+
+.intro-divider i {
+    font-size: 40px;
+}
+
+.fa-angles-right {
+    color: #12bbfe;
 }
