@@ -22,7 +22,7 @@
 
 body {
     min-height: 100vh;
-    background-color: #0b1b44;
+    background: #0b1b44;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -33,7 +33,7 @@ body {
     display: block;
     margin: 0 auto;
     background-color: #7f8cad;
-    padding: 16px 18px;
+    padding: 20px 24px;
     border-radius: 25px;
     max-width: 400px;
     width: 100%;
@@ -49,23 +49,30 @@ body {
 }
 
 .social-login h2 {
-    font-size: 30px;
-    font-family: "Helvetica";
+    font-size: 35px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 3px 3px;
 }
 
 .social-login-buttons button {
     display: block;
     text-align: center;
-    padding: 8px 8px;
+    padding: 12px 12px;
     cursor: pointer;
     border-radius: 15px;
-    margin: 5px 0;
+    margin: 10px 0;
     border: none;
     width: 100%;
     font-weight: bold;
 }
 
+.social-login-buttons button:hover {
+    transform: translateY(-3px);
+}
+
+.social-login-buttons {
+    margin-top: 10px;
+}
 .google-login {
     background-color: #ffffff;
     color: #000000;
@@ -89,12 +96,12 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 3px 3px;
-    border: 2px solid;
+    padding: 10px 10px;
+    border: 3px solid;
     color: blueviolet;
     cursor: pointer;
     border-radius: 15px;
-    margin: 7px 0;
+    margin: 10px 0;
     font-size: medium;
     font-weight: bold;
     width: 100%;
@@ -105,13 +112,14 @@ body {
     background-color: transparent;
     cursor: pointer;
     border: none;
-    padding: 7px 7px;
+    padding: 10px;
     width: 100%;
-    font-size: 24px;
+    font-size: 30px;
 }
 
 .icon-login button:hover {
-    filter: brightness(300%);
+    filter: brightness(200%);
+    transform: translateY(-5px);
 }
 
 .social-login p {
@@ -158,21 +166,24 @@ body {
 }
 
 #email {
-    padding: 8px 8px;
+    padding: 15px;
+    padding-left: 35px;
     border: 2px solid;
-    color: #170635;
-    border-radius: 10px;
-    background-color: transparent;
+    color: #000000;
+    border-radius: 15px;
+    background-color: #eceaf1;
     width: 100%;
     margin: 5px 0;
+    outline: none;
     font-weight: bold;
+    font-size: 17px;
+    font-family: sans-serif;
 }
 
 #email:focus {
-    filter: brightness(90%);
-    outline: none;
+    filter: brightness(50%);
     border: 2px solid;
-    background-color: rgb(234, 235, 240);
+    background-color: transparent;
     color: #000000;
 }
 
@@ -183,28 +194,60 @@ body {
 
 }
 
+.email-input {
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.fa-envelope {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 3%;
+    font-size: 20px;
+}
+
 #password {
-    padding: 8px 8px;
+    padding: 13px;
+    padding-left: 35px;
     outline: none;
     border: 2px solid;
-    color: #170635;
-    border-radius: 10px;
-    background-color: transparent;
+    color: #000000;
+    border-radius: 15px;
+    background-color: #eceaf1;
     width: 100%;
     margin: 5px 0;
+    outline: none;
     font-weight: bold;
+    font-size: 17px;
+    font-family: sans-serif;
 }
 
 #password:focus {
-    filter: brightness(90%);
-    background-color: rgb(234, 235, 240);
-    outline: none;
+    filter: brightness(50%);
+    background-color: transparent;
     border: 2px solid;
     color: #000000;
 }
 
+.password-input {
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.fa-lock {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 3%;
+    font-size: 20px;
+}
+
 .other-login-actions button:hover {
     filter: brightness(90%);
+    transform: translateY(-2px);
 }
 
 .divider-line {
@@ -239,7 +282,7 @@ body {
     font-size: small;
     font-weight: bold;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
-    padding: 8px 10px;
+    padding: 12px 12px;
     border-radius: 15px;
     border: none;
     margin: 5px 0;
@@ -279,14 +322,14 @@ body {
 
 .intro-section h1 {
     font-size: 70px;
-    font-family:'Segoe UI';
+    font-family: 'Segoe UI';
     margin: 0;
-    color: #1298fe;
+    color: #0390fc;
 }
 
 .intro-section p {
-    font-size: 25px;
-    font-family:'Trebuchet MS', sans-serif;
+    font-size: 23px;
+    font-family: 'Trebuchet MS', sans-serif;
     color: #ffffff;
     margin: 5px 0;
 }
@@ -294,7 +337,7 @@ body {
 .intro-section h2 {
     font-size: 50px;
     font-family: 'Franklin Gothic Medium';
-    color: #f48f1b;
+    color: #0291ff;
 }
 
 .letter {
@@ -328,25 +371,34 @@ body {
 
 .intro-section h1 i {
     font-size: 50px;
-    color: #def607;
+    color: #fcf803;
 }
 
 .intro-divider {
     display: flex;
-    justify-content: flex-start;
     align-items: center;
-    font-size: 40px;
-    font-family: 'Franklin Gothic Medium';
+    font-size: 50px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-style: italic;
-    color: #12bbfe;
-    margin: 0;
     gap: 10px;
+    padding: 2px;
+    margin: 5px;
+    border: none;
+    color: #f3e304;
 }
 
-.intro-divider i {
-    font-size: 40px;
+.intro-divider::before {
+    flex: 1;
+    content: "";
+    height: 10px;
+    background-color: #f3e304;
+    margin-right: 7px;
 }
 
-.fa-angles-right {
-    color: #12bbfe;
+.intro-divider::after {
+    flex: 1;
+    content: "";
+    height: 10px;
+    background-color: #f3e304;
+    margin-left: 7px;
 }

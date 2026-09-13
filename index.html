@@ -12,7 +12,7 @@
 
 <body>
     <div class="intro-section">
-        <h1>    
+        <h1>
             <span class="letter" style="--i:1">W</span>
             <span class="letter" style="--i:2">e</span>
             <span class="letter" style="--i:3">l</span>
@@ -22,13 +22,7 @@
             <span class="letter" style="--i:7">e</span>
         </h1>
         <div class="intro-divider">
-           <span class="icon" style="--i:7.5"><i class="fa-solid fa-angles-right"></i></span>
-           <span class="icon" style="--i:8"><i class="fa-solid fa-angles-right"></i></span>
-           <span class="word" style="--i:8.5">TO</span>
-           <span class="icon" style="--i:9"><i class="fa-solid fa-angles-right"></i></span>
-           <span class="icon" style="--i:10"><i class="fa-solid fa-angles-right"></i></span>
-           <span class="icon" style="--i:11"><i class="fa-solid fa-angles-right"></i></span>
-
+            <span class="word" style="--i:8.5">to</span>
         </div>
         <h2>
             <span class="word" style="--i:12">Telzee</span>
@@ -87,11 +81,18 @@
         <div class="email-login">
             <form id="email-login-form">
                 <label for="email" class="visually-hidden">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Email" required>
+                <div class="email-input">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
                 <label for="password" class="visually-hidden">Password:</label>
-                <input type="password" id="password" name="password" placeholder="Password" required>
+                <div class="password-input">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                </div>
                 <div class="other-login-actions">
-                    <button type="submit" class="login-with-email"><i class="fa-solid fa-envelope"></i> Login with Email</button>
+                    <button type="submit" class="login-with-email">Login with
+                        Email</button>
                     <button type="button" class="get-referral-link">Get Referral Link</button>
                 </div>
             </form>
